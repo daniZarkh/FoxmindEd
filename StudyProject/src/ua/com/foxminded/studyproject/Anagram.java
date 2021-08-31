@@ -1,4 +1,4 @@
-package  ua.com.foxminded.studyproject;
+package ua.com.foxminded.studyproject;
 
 public class Anagram {
     public static String reverseString(String startString) {
