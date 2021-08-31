@@ -1,4 +1,4 @@
-package ua.com.foxminded.studyproject;
+package  ua.com.foxminded.studyproject;
 
 import java.util.Scanner;
 
