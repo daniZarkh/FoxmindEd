@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37db592c-7b85-430d-b385-3c076b3b2c45" name="Changes" comment="Task 1 - Anagram">
+    <list default="true" id="37db592c-7b85-430d-b385-3c076b3b2c45" name="Changes" comment="Anagram">
+      <change beforePath="$PROJECT_DIR$/.idea/foxmindedstudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/studyproject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/foxmindedstudy/Anagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/studyproject/Anagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/foxmindedstudy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/studyproject/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +124,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="studyproject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="studyproject" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
