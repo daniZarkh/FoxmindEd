@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37db592c-7b85-430d-b385-3c076b3b2c45" name="Changes" comment="Anagram">
-      <change beforePath="$PROJECT_DIR$/.idea/foxmindedstudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/studyproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="37db592c-7b85-430d-b385-3c076b3b2c45" name="Changes" comment="task 1 - Anagram">
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/foxmindedstudy/Anagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/studyproject/Anagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/foxmindedstudy/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/studyproject/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/studyproject/Anagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/studyproject/Anagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/studyproject/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudyProject/src/ua/com/foxminded/studyproject/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +71,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1xVA9O14HY4LcmnVBTToao5zUDr" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />

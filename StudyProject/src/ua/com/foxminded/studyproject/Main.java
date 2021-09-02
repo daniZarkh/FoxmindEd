@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        String startString = "";
         System.out.println("Enter some text: ");
         Scanner scanner = new Scanner(System.in);
-        String startString = scanner.nextLine();
+        startString = scanner.nextLine();
         scanner.close();
-        String[] words = startString.split("\\s+");
+        String[] words = Anagram.stringSplit(startString);
         for (String word : words) {
-        String reversed = Anagram.reverseString(word);
+        String reversed = Anagram.reverseWord(word);
         System.out.println("The reversed string is: " + reversed);
         }
     }
