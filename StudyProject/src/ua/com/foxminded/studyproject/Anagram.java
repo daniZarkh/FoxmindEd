@@ -3,13 +3,13 @@ package ua.com.foxminded.studyproject;
 public class Anagram {
 
     public String reverseText(String text) {
-        String concatWords = "";
+        StringBuilder concatWords = new StringBuilder();
         String[] words = text.split("\\s+");
         for (String word : words) {
             String reversed = reverseWord(word);
-            concatWords += reversed + " ";
+            concatWords.append(reversed).append(" ");
         }
-        return concatWords;
+        return concatWords.toString();
     }
 
         public String reverseWord (String startString){
