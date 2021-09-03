@@ -10,6 +10,6 @@ public class Main {
         String text = scanner.nextLine();
         scanner.close();
         Anagram anagram = new Anagram();
-        System.out.println(anagram.obtainResult(text));
+        System.out.println(anagram.reverseText(text));
        }
 }

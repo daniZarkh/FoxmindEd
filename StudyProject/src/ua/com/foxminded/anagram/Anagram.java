@@ -2,14 +2,14 @@ package ua.com.foxminded.anagram;
 
 public class Anagram {
 
-    public String obtainResult(String text) {
-        StringBuilder concatWords = new StringBuilder();
+    public String reverseText(String text) {
+        StringBuilder result = new StringBuilder();
         String[] words = text.split("\\s+");
         for (String word : words) {
-            String reverseWord = reverseWord(word);
-            concatWords.append(reverseWord).append(" ");
+            String reversedWord = reverseWord(word);
+            result.append(reversedWord).append(" ");
         }
-        return concatWords.toString();
+        return result.toString();
     }
 
         public String reverseWord(String word){
