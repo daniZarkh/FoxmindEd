@@ -1,8 +1,8 @@
-package ua.com.foxminded.studyproject;
+package ua.com.foxminded.anagram;
 
 public class Anagram {
 
-    public String reverseText(String text) {
+    public String obtainResult(String text) {
         StringBuilder concatWords = new StringBuilder();
         String[] words = text.split("\\s+");
         for (String word : words) {
@@ -12,23 +12,21 @@ public class Anagram {
         return concatWords.toString();
     }
 
-        public String reverseWord (String startString){
-            char[] ifNotEmptyArray = new char[startString.length()];
-            char[] chars = startString.toCharArray();
+        public String reverseWord(String word){
+            char[] ifNotEmptyArray = new char[word.length()];
+            char[] chars = word.toCharArray();
             int indexRight = chars.length - 1;
             int indexLeft = 0;
 
             while (chars.length / 2 >= indexLeft || chars.length / 2 < indexRight) {
                 if (!Character.isLetter(chars[indexLeft])) {
                     indexLeft++;
-                }
-                if (!Character.isLetter(chars[indexRight])) {
+                } else if (!Character.isLetter(chars[indexRight])) {
                     indexRight--;
-                }
-                if (Character.isLetter(chars[indexLeft]) && Character.isLetter(chars[indexRight])) {
-                    char temp = chars[indexLeft];
+                } else {
+                    char leftSymbol = chars[indexLeft];
                     chars[indexLeft] = chars[indexRight];
-                    chars[indexRight] = temp;
+                    chars[indexRight] = leftSymbol;
                     indexLeft++;
                     indexRight--;
                 }
