@@ -13,7 +13,7 @@ public class Main {
         String[] words = Anagram.stringSplit(startString);
         for (String word : words) {
         String reversed = Anagram.reverseWord(word);
-        System.out.println("The reversed string is: " + reversed);
-        }
+        Anagram.concatenate(reversed);
+       }
     }
 }

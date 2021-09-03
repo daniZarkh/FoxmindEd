@@ -12,15 +12,14 @@ public class Anagram {
         int indexRight = chars.length - 1;
         int indexLeft = 0;
 
-        if (startString.isEmpty()) {
-            return startString;
-        }
-        while (chars.length / 2 >= indexLeft) {
+        while (chars.length / 2 >= indexLeft || chars.length / 2 < indexRight) {
             if (!Character.isLetter(chars[indexLeft])) {
                 indexLeft++;
-            } else if (!Character.isLetter(chars[chars.length - 1 - indexRight])) {
+            }
+            if (!Character.isLetter(chars[indexRight])) {
                 indexRight--;
-            } else {
+            }
+            if (Character.isLetter(chars[indexLeft]) && Character.isLetter(chars[indexRight])) {
                 char temp = chars[indexLeft];
                 chars[indexLeft] = chars[indexRight];
                 chars[indexRight] = temp;
@@ -29,5 +28,9 @@ public class Anagram {
             }
         }
         return String.valueOf(chars);
+    }
+
+    public static void concatenate(String reversed) {
+        System.out.println("The reversed string is: " + reversed);
     }
 }
