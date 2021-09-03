@@ -11,6 +11,6 @@ public class Main {
         startString = scanner.nextLine();
         scanner.close();
         String[] words = Anagram.stringSplit(startString);
-        Anagram.results(words);
+        Anagram.reverseString(words);
        }
 }

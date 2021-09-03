@@ -6,7 +6,7 @@ public class Anagram {
         return startString.split("\\s+");
     }
 
-    public static void results(String[] words) {
+    public static void reverseString(String[] words) {
         for (String word : words) {
             String reversed = reverseWord(word);
             concatenate(reversed);
