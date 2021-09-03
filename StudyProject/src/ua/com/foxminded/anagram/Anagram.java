@@ -13,7 +13,6 @@ public class Anagram {
     }
 
         public String reverseWord(String word){
-            char[] ifNotEmptyArray = new char[word.length()];
             char[] chars = word.toCharArray();
             int indexRight = chars.length - 1;
             int indexLeft = 0;
