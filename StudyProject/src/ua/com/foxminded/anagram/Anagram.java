@@ -6,8 +6,8 @@ public class Anagram {
         StringBuilder concatWords = new StringBuilder();
         String[] words = text.split("\\s+");
         for (String word : words) {
-            String reversed = reverseWord(word);
-            concatWords.append(reversed).append(" ");
+            String reverseWord = reverseWord(word);
+            concatWords.append(reverseWord).append(" ");
         }
         return concatWords.toString();
     }
