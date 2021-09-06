@@ -7,14 +7,15 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AnagramTest {
 
+    Anagram anagram = null;
+
     @BeforeEach
     void setUp() {
-        Anagram anagram = new Anagram();
+        anagram = new Anagram();
     }
 
     @Test
     void reverseText() {
-        Anagram anagram = new Anagram();
         String text = "a1bcd efg!h";
         String outcome = anagram.reverseText(text);
         assertEquals("d1cba hgf!e ", outcome);
@@ -22,14 +23,12 @@ class AnagramTest {
 
     @Test
     void reverseWord() {
-        Anagram anagram = new Anagram();
         String word = "a1bcd";
         assertEquals("d1cba", anagram.reverseWord(word));
     }
 
     @Test
     void reverseTextIfEmptyLine() {
-        Anagram anagram = new Anagram();
         String text = "";
         String outcome = anagram.reverseText(text);
         assertEquals(" ", outcome);
@@ -37,7 +36,6 @@ class AnagramTest {
 
     @Test
     void reverseWordIfEmptyLine() {
-        Anagram anagram = new Anagram();
         String word = "";
         assertEquals("", anagram.reverseWord(word));
     }
