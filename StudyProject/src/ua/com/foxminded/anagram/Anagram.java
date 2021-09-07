@@ -12,7 +12,7 @@ public class Anagram {
         return result.toString();
     }
 
-    public String reverseWord(String word) {
+    private String reverseWord(String word) {
         char[] chars = word.toCharArray();
         int indexRight = chars.length - 1;
         int indexLeft = 0;
