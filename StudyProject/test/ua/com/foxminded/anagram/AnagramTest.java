@@ -15,66 +15,72 @@ class AnagramTest {
     }
 
     @Test
-    void givenNull_whenReverseText_thenNullPointerException() {
+    void givenNull_whenReverseText_thenRuntimeException() {
         String text = null;
-        assertThrows(NullPointerException.class, () -> anagram.reverseText(text));
+
+        assertThrows(RuntimeException.class, () -> anagram.reverseText(text));
     }
 
     @Test
-    void givenEmptyLine_reverseText_thenEmptyLine() {
+    void givenEmptyText_whenReverseText_thenEmptyText() {
         String text = "";
+
         String actual = anagram.reverseText(text);
 
-        assertEquals(" ", actual);
+        assertEquals("", actual);
     }
 
     @Test
-    void givenWord_reverseText_thenWordReversed() {
+    void givenWord_whenReverseText_thenWordReversed() {
         String text = "studies";
+
         String actual = anagram.reverseText(text);
 
-        assertEquals("seiduts ", actual);
+        assertEquals("seiduts", actual);
     }
 
     @Test
-    void givenWordWithSymbols_reverseText_thenWordReversedSymbolsRemain() {
+    void givenWordWithSymbols_whenReverseText_thenReversedOnlyLetters() {
         String text = "s1tudied!";
+
         String actual = anagram.reverseText(text);
 
-        assertEquals("d1eiduts! ", actual);
+        assertEquals("d1eiduts!", actual);
     }
 
     @Test
-    void givenWordOfSymbols_reverseText_thenIdentical() {
+    void givenNoneLettersWord_whenReverseText_thenSameWord() {
         String text = "!@+-&%*$";
+
         String actual = anagram.reverseText(text);
 
-        assertEquals("!@+-&%*$ ", actual);
+        assertEquals("!@+-&%*$", actual);
     }
 
     @Test
     void givenText_whenReverseText_thenWordsReversed() {
         String text = "really simple text";
+
         String actual = anagram.reverseText(text);
 
-        assertEquals("yllaer elpmis txet ", actual);
+        assertEquals("yllaer elpmis txet", actual);
     }
 
     @Test
-    void givenTextWithSymbols_whenReverseText_thenWordsReversedSymbolsRemain() {
+    void givenTextWithSymbols_whenReverseText_thenReversedOnlyLetters() {
         String text = "not12 to2o sim!ple te@9xt";
+
         String actual = anagram.reverseText(text);
 
-        assertEquals("ton12 oo2t elp!mis tx@9et ", actual);
+        assertEquals("ton12 oo2t elp!mis tx@9et", actual);
     }
 
     @Test
     void givenTextOfSymbols_whenReverseText_thenIdentical() {
         String text = "65@!)- ++%^#! &&&&&&";
+
         String actual = anagram.reverseText(text);
 
-        assertEquals("65@!)- ++%^#! &&&&&& ", actual);
+        assertEquals("65@!)- ++%^#! &&&&&&", actual);
     }
-
-
 }
