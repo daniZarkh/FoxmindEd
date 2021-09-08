@@ -2,14 +2,20 @@ package ua.com.foxminded.anagram;
 
 public class Anagram {
 
-    public String reverseText(String text) throws RuntimeException {
+    public String reverseText(String text) {
         StringBuilder result = new StringBuilder();
-        String[] words = text.split("\\s+");
-        for (String word : words) {
-            String reversedWord = reverseWord(word);
-            result.append(reversedWord).append(" ");
+        if (text == null) {
+            throw new IllegalArgumentException();
         }
-        result.setLength(result.length() - 1);
+        String[] words = text.split("\\s+");
+        for (int i = 0; i < words.length; i++) {
+            String reversedWord = reverseWord(words[i]);
+            if (i < words.length - 1) {
+                result.append(reversedWord).append(" ");
+            } else {
+                result.append(reversedWord);
+            }
+        }
         return result.toString();
     }
 

@@ -18,7 +18,7 @@ class AnagramTest {
     void givenNull_whenReverseText_thenRuntimeException() {
         String text = null;
 
-        assertThrows(RuntimeException.class, () -> anagram.reverseText(text));
+        assertThrows(IllegalArgumentException.class, () -> anagram.reverseText(text));
     }
 
     @Test
