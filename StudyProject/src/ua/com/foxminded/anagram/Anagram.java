@@ -5,15 +5,14 @@ public class Anagram {
     public String reverseText(String text) {
         StringBuilder result = new StringBuilder();
         if (text == null) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("The variable 'text' should not be null");
         }
         String[] words = text.split("\\s+");
         for (int i = 0; i < words.length; i++) {
             String reversedWord = reverseWord(words[i]);
+            result.append(reversedWord);
             if (i < words.length - 1) {
-                result.append(reversedWord).append(" ");
-            } else {
-                result.append(reversedWord);
+                result.append(" ");
             }
         }
         return result.toString();
