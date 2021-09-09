@@ -4,15 +4,21 @@ public class Anagram {
 
     public String reverseText(String text) {
         StringBuilder result = new StringBuilder();
+        if (text == null) {
+            throw new IllegalArgumentException("The variable 'text' should not be null");
+        }
         String[] words = text.split("\\s+");
-        for (String word : words) {
-            String reversedWord = reverseWord(word);
-            result.append(reversedWord).append(" ");
+        for (int i = 0; i < words.length; i++) {
+            String reversedWord = reverseWord(words[i]);
+            result.append(reversedWord);
+            if (i < words.length - 1) {
+                result.append(" ");
+            }
         }
         return result.toString();
     }
 
-    public String reverseWord(String word) {
+    private String reverseWord(String word) {
         char[] chars = word.toCharArray();
         int indexRight = chars.length - 1;
         int indexLeft = 0;
