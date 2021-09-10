@@ -13,7 +13,6 @@
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
 
-   <!--1 -->
     <build>
         <plugins>
             <plugin>
@@ -27,10 +26,8 @@
         </plugins>
     </build>
 
-    <!--2 -->
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest-library -->
-        <dependency>
+     <dependencies>
+            <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.7.0</version>
