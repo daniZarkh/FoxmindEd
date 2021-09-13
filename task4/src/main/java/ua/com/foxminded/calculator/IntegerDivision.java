@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
-public class IntegerDivision {
+public class  IntegerDivision {
 
     private int dividend;
     private int divisor;

@@ -1,6 +1,6 @@
 package ua.com.foxminded.calculator;
 
-public class Result {
+public class  Result {
     private final int dividend;
     private final int divisor;
     private final int quotient;
