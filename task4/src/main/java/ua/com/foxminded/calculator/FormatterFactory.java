@@ -4,7 +4,7 @@ import java.util.Formatter;
 import java.util.HashMap;
 import java.util.Map;
 
-public enum  FormatterFactory {
+public enum FormatterFactory {
     INSTANCE();
 
     private final Map<String, FormatterSupplier> suppliers;
